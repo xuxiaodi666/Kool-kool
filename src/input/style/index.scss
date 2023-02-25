@@ -1,0 +1,53 @@
+.koo-input-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.koo-input {
+  height: 1.5rem;
+  width: 10rem;
+  border: var(--koo-gray-6) 1px solid;
+  border-radius: 5px;
+
+  &:hover {
+    outline: var(--koo-blue-4) 1px solid;
+  }
+
+  &:focus {
+    outline: var(--koo-gray-8) 1px solid;
+  }
+
+  &::-webkit-input-placeholder {
+    color: var(--koo-gray-6);
+  }
+}
+
+.koo-input-small {
+  height: 1rem;
+}
+
+.koo-input-large {
+  height: 2rem;
+}
+
+.koo-input-disabled {
+  outline: var(--koo-failed-color) 1px solid;
+
+  &:hover {
+    outline: var(--koo-failed-color) 1px solid;
+    cursor: not-allowed;
+  }
+}
+
+.koo-input-group-prefix,
+.koo-input-group-suffix {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border-radius: 4px;
+  margin-left: -3px;
+  margin-right: -3px;
+  font-weight: var(--koo-font-weight-regular);
+  text-align: center;
+  white-space: nowrap;
+}
